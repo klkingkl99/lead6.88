@@ -1,0 +1,85 @@
+
+body {
+    margin: 0;
+    background: #0b0c10;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 15px;
+}
+a.image-link {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+img.hero {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#giftWrapper {
+    position: relative;
+    margin: 20px auto;
+    max-width: 300px;
+}
+#giftBox {
+    width: 100%;
+    cursor: pointer;
+    animation: pulse 2s infinite ease-in-out;
+    transition: transform 0.3s ease;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+#giftBox:hover {
+    transform: scale(1.1);
+}
+#message {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fffacd;
+}
+#message.animate {
+    animation: bounce 0.6s ease infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+#confetti {
+    display: none;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 300px;
+}
+.cta-button {
+    display: none;
+    margin: 25px auto 0;
+    padding: 16px 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.cta-button:active {
+    background-color: #1ca04f;
+}
+.disclaimer {
+    font-size: 11px;
+    color: #cccccc;
+    margin-top: 40px;
+    line-height: 1.4em;
+    padding: 0 10px;
+}
