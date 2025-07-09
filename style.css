@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  background: #0b0c10;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+a.image-link {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+img.hero {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#loadingText {
+  color: #ffffcc;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+#popupBubble {
+  background: #ffcc00;
+  color: #000;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  animation: floatUp 0.5s ease-in-out forwards;
+}
+.hidden {
+  display: none;
+}
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#giftWrapper {
+  position: relative;
+  margin: 20px auto;
+  max-width: 300px;
+}
+#giftBox {
+  width: 100%;
+  cursor: pointer;
+  animation: pulse 2s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+#message {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fffacd;
+}
+#message.animate {
+  animation: bounce 0.6s ease infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.cta-button {
+  display: none;
+  margin: 20px auto;
+  padding: 14px 18px;
+  background-color: #25D366;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.tips-section {
+  margin-top: 30px;
+}
+#tipsButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#tipsButton:disabled {
+  background: #888;
+}
+#tipsDisplay {
+  margin-top: 15px;
+  font-size: 15px;
+  font-style: italic;
+  color: #ffffcc;
+}
+.limited-note {
+  font-size: 14px;
+  color: #ff6a6a;
+  animation: blink 1s infinite;
+  margin-bottom: 10px;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.disclaimer {
+  font-size: 11px;
+  color: #cccccc;
+  margin-top: 40px;
+  line-height: 1.4em;
+}
